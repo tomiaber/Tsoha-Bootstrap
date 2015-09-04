@@ -2,9 +2,9 @@
 
 Yleisiä linkkejä:
 
-* [Linkki sovellukseeni](https://www.cs.helsinki.fi)
+* [Linkki sovellukseeni](http://tomiaber.users.cs.helsinki.fi/tietokanta/)
 * [Linkki dokumentaatiooni](https://www.github.com)
 
-## Työn aihe
+Työn aihe
 
-Laita tähän aihekuvaus tai [linkki valmiiseen aiheeseen](http://advancedkittenry.github.io/suunnittelu_ja_tyoymparisto/aiheet/Pokemon-kanta.html) 
+Jäsenrekiste järjestölle, jossa on paljon jäseniä ja jäsenet voivat toimia useissa eri rooleissa.
