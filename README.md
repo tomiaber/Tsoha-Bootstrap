@@ -10,7 +10,7 @@ Työn aihe
 Jäsenrekiste järjestölle, jossa on paljon jäseniä ja jäsenet voivat toimia useissa eri rooleissa.
 
 Linkkejä bootstrap dokumentaatioon:
-[tekstin asettelu ja tyylittely](http://getbootstrap.com/css/#type)
-[taulukot](http://getbootstrap.com/css/#tables)
-[lomakkeet](http://getbootstrap.com/css/#forms)
-[painikkeet](http://getbootstrap.com/css/#buttons)
+*[tekstin asettelu ja tyylittely](http://getbootstrap.com/css/#type)
+*[taulukot](http://getbootstrap.com/css/#tables)
+*[lomakkeet](http://getbootstrap.com/css/#forms)
+*[painikkeet](http://getbootstrap.com/css/#buttons)
