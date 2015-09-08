@@ -1,0 +1,4 @@
+public static function sandbox(){
+  	<h1>Tere</h1>
+	View::make('helloworld.html');
+}
