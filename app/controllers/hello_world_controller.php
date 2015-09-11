@@ -9,6 +9,18 @@
 
     public static function sandbox(){
       // Testaa koodiasi täällä
-      View:make('helloworld.html');
+      View::make('helloworld.html');
     }
-  }
+    
+    public static function ryhmat(){
+		View::make('ryhmat.html');
+	}
+	
+	public static function henkilot(){
+		View::make('henkilot.html');
+	}
+	
+	public static function henkilo(){
+		View::make('henkilo.html');
+	}
+}

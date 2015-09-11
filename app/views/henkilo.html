@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1>Åberg Tomi tiedot</h1>
+
+<table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th>Sukunimi</th>
+        <th>Etunimet</th>
+	<th>Sähköposti</th>
+	<th>Osoite</th>
+	<th>Puhelin</th>
+	
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Åberg</td>
+        <td>Tomi</td>
+	<td>tomi.aberg@sp.com</td>
+	<td>Mannerheimintie 10</td>
+	<td>123-456787</td>
+	
+	
+      </tr>
+   	</tbody>
+	</table>
+
+<h1> Lisätietoja </h1>
+<input type="text" class="form-control" placeholder="Tykkää pitsasta!">
+
+<table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th>Kuuluu ryhmiin</th>
+        <th>Tiedot</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Ryhmä A</td>
+        <td><button class="btn btn-primary">valitse</button></td>
+      </tr>
+      <tr>
+        <td>Ryhmä B</td>
+        <td><button class="btn btn-primary">valitse</button></td>
+      </tr>
+	<tr>
+        <td>Ryhmä X</td>
+        <td><button class="btn btn-primary">valitse</button></td>
+      </tr>
+
+
+
+
+    </tbody>
+  </table>
+
+
+{% endblock %}

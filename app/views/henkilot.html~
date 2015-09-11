@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block content %}
+<H1>Ryhman A henkilot</H1>
+
+<table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th>Sukunimi</th>
+        <th>Etunimet</th>
+	<th>Sähköposti</th>
+	<th>Osoite</th>
+	<th>Puhelin</th>
+	<th>Lisätietoja</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Åberg</td>
+        <td>Tomi</td>
+	<td>tomi.aberg@sp.com</td>
+	<td>Mannerheimintie 10</td>
+	<td>123-456787</td>
+	<td><button class="btn btn-primary">Lisätietoja</button></td>
+	
+      </tr>
+      <tr>
+        <td>Aarnio</td>
+        <td>Pekka</td>
+	<td>pekka.aarnio@sp.com</td>
+	<td>Mannerheimintie 11</td>
+	<td>122454-.52126</td>
+	<td><button class="btn btn-primary">Lisätietoja</button></td>
+	
+      </tr>
+    </tbody>
+  </table>
