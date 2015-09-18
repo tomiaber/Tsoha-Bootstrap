@@ -9,7 +9,7 @@
   });
 
   $routes->get('/ryhmat', function() {
-    HelloWorldController::ryhmat();
+      RyhmatController::ryhmat();
   });
 
   $routes->get('/henkilot', function() {
@@ -18,4 +18,12 @@
 
 	$routes->get('/henkilo', function() {
     HelloWorldController::henkilo();
+  });
+
+  $routes->get('/lisaa', function() {
+    HelloWorldController::lisaa();
+  });
+  
+  $routes->post('/uusiryhma',function(){
+      RyhmatController::store();
   });

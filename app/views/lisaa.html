@@ -1,0 +1,21 @@
+
+{% extends "base.html" %}
+{% block content %}
+  <h1>Lisää uusi ryhma</h1>
+
+  <form method="post" action="{{base_path}}/uusiryhma">
+    <div class="form-group">
+      <label>Nimi</label>
+      <input type="text" name="ryhmannimi" class="form-control">
+    </div>
+
+    <div class="form-group">
+      <label>Lisätietoja</label>
+      <input type="text" name="tietoa" class="form-control">
+    </div>
+
+    <div class="form-group">
+      <button type="submit" class="btn btn-primary">Lisää</button>
+    </div>
+  </form>
+{% endblock %}

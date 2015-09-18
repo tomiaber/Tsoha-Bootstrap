@@ -1,5 +1,5 @@
 <?php
-  require 'app/models/ryhma.php';
+  reguire 'app/models/ryhmat.php';
   class HelloWorldController extends BaseController{
 
     public static function index(){
@@ -9,17 +9,11 @@
 
     public static function sandbox(){
       // Testaa koodiasi täällä
-	$ryhmat = Ryhma::all();
+	$ryhmat = ryhmat::all();
 	Kint::dump($ryhmat);
-        $henkilo = Henkilo::hae(100);
-        Kint::dump($henkilo);
 
-      // View::make('helloworld.html');
+      View::make('helloworld.html');
     }
-    public static function lisaa(){
-        View::make('lisaa.html');
-    }
-    
     
     public static function ryhmat(){
 		View::make('ryhmat.html');
