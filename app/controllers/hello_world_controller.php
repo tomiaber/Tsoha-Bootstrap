@@ -4,15 +4,24 @@
 
     public static function index(){
       // make-metodi renderöi app/views-kansiossa sijaitsevia tiedostoja
-   	  echo 'Tämä on etusivu!';
+   	  View::make('aloitus.html');
     }
+    
+    public static function esimerkki(){
+      // make-metodi renderöi app/views-kansiossa sijaitsevia tiedostoja
+   	  View::make('helloworld.html');
+    }
+    
 
     public static function sandbox(){
       // Testaa koodiasi täällä
 	$ryhmat = Ryhma::all();
 	Kint::dump($ryhmat);
-        $henkilo = Henkilo::hae(100);
+        $henkilo = Henkilo::hae(1);
         Kint::dump($henkilo);
+        $ryhma = Ryhma::hae("Pallopojat");
+        Kint::dump($ryhma);
+        
 
       // View::make('helloworld.html');
     }

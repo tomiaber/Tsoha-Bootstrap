@@ -8,14 +8,17 @@ class RyhmatController extends BaseController{
    }
    public static function store(){
        // POST-pyynnön muuttujat sijaitsevat $_POST nimisessä assosiaatiolistassa
-        $params = $_POST;
+       
+       $params = $_POST;
         // Alustetaan uusi Game-luokan olion käyttäjän syöttämillä arvoilla
         $uusiryhma = new Ryhma(array(
-      'ryhmannimi' => $params['ryhmannimi'],
-      'tietoa' => $params['tietoa']
-    ));
-   $uusiryhma->save();
+            'ryhmannimi' => $params['ryhmannimi'],
+            'lisatietoja' => $params['tietoa']
+        ));
         
+        $uusiryhma->save();
+        
+        Redirect::to('/ryhmat');
    }
    
 }

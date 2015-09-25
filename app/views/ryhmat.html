@@ -10,6 +10,10 @@
       <tr>
         <th>Ryhmän nimi</th>
         <th>Tiedot</th>
+        <th>Jäsenet</th>
+        <th>Muokkaa tietoja</th>
+        <th>Poista ryhmä</th>
+        
       </tr>
     </thead>
     <tbody>
@@ -17,9 +21,13 @@
         {% for ryhma in ryhmat %}
         <tr>
             <td>{{ryhma.ryhmannimi}}        </td>
+            <td>{{ryhma.lisatietoja}}        </td>
         
-       <td><button class="btn btn-primary">valitse</button></td>
-      </tr>
+       <td><button class="btn btn-primary">Jäsenlista</button></td>
+       <td><button class="btn btn-primary">Muokkaa tietoja</button></td>
+      <td><button class="btn btn-danger">Poista ryhmä</button></td>
+        </tr>
+      
       {% endfor %}
    
 
@@ -30,7 +38,8 @@
   </table>
   
 
-
+<a href="{{base_path}}/lisaa" class="btn btn-success">Lisää uusi ryhmä</a><br>
+<a href="{{base_path}}/" class="btn btn-success">Palaa aloitus sivulle</a>
 
 
 

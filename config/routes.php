@@ -7,9 +7,14 @@
   $routes->get('/hiekkalaatikko', function() {
     HelloWorldController::sandbox();
   });
+  
+  $routes->get('/esimerkki', function() {
+    HelloWorldController::esimerkki();
+  });
 
   $routes->get('/ryhmat', function() {
       RyhmatController::ryhmat();
+      
   });
 
   $routes->get('/henkilot', function() {
