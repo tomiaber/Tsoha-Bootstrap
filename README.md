@@ -9,10 +9,13 @@ Työn aihe
 
 Jäsenrekiste järjestölle, jossa on paljon jäseniä ja jäsenet voivat toimia useissa eri rooleissa.
 
-Näkymiä:
-* [henkilo](http://tomiaber.users.cs.helsinki.fi/tietokanta/henkilo)
-* [henkilot](http://tomiaber.users.cs.helsinki.fi/tietokanta/henkilot)
+Toimii: ryhmien listaus,lisäys,poisto ja muokkaus 
+RyhmäNäkyä:
 * [ryhmat](http://tomiaber.users.cs.helsinki.fi/tietokanta/ryhmat)
+
+Toimii: henkilöiden listaus, lisäys ja poisto
+Henkilönäkymä:
+* [henkilöt](http://tomiaber.users.cs.helsinki.fi/tietokanta/henkilot)
 
 
 Linkkejä bootstrap dokumentaatioon:
