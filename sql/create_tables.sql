@@ -17,7 +17,13 @@ PRIMARY KEY(ryhmannimi)
 );
 
 CREATE TABLE Henkiloidenryhmat(
-henkilonumero INTEGER REFERENCES Henkilo(henkilonumero),
-ryhmannimi varchar(20) REFERENCES Ryhma(ryhmannimi),
+henkilonumero INTEGER REFERENCES Henkilo(henkilonumero) on delete cascade,
+ryhmannimi varchar(20) REFERENCES Ryhma(ryhmannimi) on delete cascade,
 PRIMARY KEY(henkilonumero,ryhmannimi) 
+);
+
+CREATE TABLE Kayttajat(
+kayttajatunnus varchar(20) NOT NULL,
+salasana varchar(10) NOT NULL,
+PRIMARY KEY(kayttajatunnus)
 );

@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block content %}
+  <h1>Lisää uusi ryhma</h1>
+ 
+  
+  
+  
+  <form method="post" action="{{base_path}}/uusihenkilo">
+    <div class="form-group">
+      <label>Etunimet</label>
+      <input type="text" name="etunimet" class="form-control">
+    </div>
+    
+    <div class="form-group">
+      <label>Sukunimi</label>
+      <input type="text" name="sukunimi" class="form-control">
+    </div>  
+      
+    <div class="form-group">
+      <label>puhelinnumero</label>
+      <textarea name="puhelinnumero" class="form-control"></textarea>
+    </div>
+    
+    <div class="form-group">
+      <label>sahkopostiosoite</label>
+      <textarea name="sahkopostiosoite" class="form-control"></textarea>
+    </div>  
+      
+    <div class="form-group">
+      <label>postinumero</label>
+      <textarea name="postinumero" class="form-control"></textarea>
+    </div>
+      
+    <div class="form-group">
+      <label>lahiosoite</label>
+      <textarea name="lahiosoite" class="form-control"></textarea>
+    </div> 
+      
+    <div class="form-group">
+      <label>muutatietoa</label>
+      <textarea name="muutatietoa" class="form-control"></textarea>
+    </div>   
+      
+    <div class="form-group">
+      <button type="submit" class="btn btn-primary">Lisää</button>
+    </div>
+  </form>
+{% endblock %}

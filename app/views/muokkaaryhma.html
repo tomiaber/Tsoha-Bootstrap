@@ -1,6 +1,7 @@
+
 {% extends "base.html" %}
 {% block content %}
-  <h1>Muokkaa ryhman {{attributes.ryhmannimi}} tietoja</h1>
+  <h1>Muokkaa ryhman tietoja</h1>
   
   {% if errors %}
     <div class="alert alert-danger">
@@ -13,16 +14,19 @@
   {% endif %}
   
   
-  <form method="post" action="{{base_path}}/ryhmat/{{attributes.ryhmannimi}}/muokkaa">
-    
-
+  <form method="post" action="{{base_path}}/uusiryhma">
     <div class="form-group">
-      <label>Lisätietoja</label>
-        <textarea name="lisatietoja" class="form-control">{{attributes.lisatietoja}}</textarea>
+      <label>Nimi</label>
+      <input type="text" name="ryhmannimi" class="form-control">
     </div>
 
     <div class="form-group">
-      <button type="submit" class="btn btn-primary">Muokkaa</button>
+      <label>Lisätietoja</label>
+      <input type="text" name="tietoa" class="form-control">
+    </div>
+
+    <div class="form-group">
+      <button type="submit" class="btn btn-primary">Lisää</button>
     </div>
   </form>
 {% endblock %}

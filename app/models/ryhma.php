@@ -27,12 +27,27 @@ public static function all(){
 
 public function save(){
     // Lisätään RETURNING id tietokantakyselymme loppuun, niin saamme lisätyn rivin id-sarakkeen arvon
+    
+    
     $query = DB::connection()->prepare('INSERT INTO Ryhma (ryhmannimi, tietoa) VALUES (:ryhmannimi, :tietoja)');
+    
     // Muistathan, että olion attribuuttiin pääse syntaksilla $this->attribuutin_nimi
     $query->execute(array('ryhmannimi' => $this->ryhmannimi, 'tietoja' => $this->lisatietoja));
     // Haetaan kyselyn tuottama rivi, joka sisältää lisätyn rivin id-sarakkeen arvon
   }
 
+public function delete(){
+    // Lisätään RETURNING id tietokantakyselymme loppuun, niin saamme lisätyn rivin id-sarakkeen arvon
+    
+    
+    $query = DB::connection()->prepare('DELETE from Ryhma where ryhmannimi=:ryhmannimi');
+    $query->execute(array('ryhmannimi' => $this->ryhmannimi));
+    // Muistathan, että olion attribuuttiin pääse syntaksilla $this->attribuutin_nimi
+    //$query->execute(array('ryhmannimi' => $this->ryhmannimi, 'tietoja' => $this->lisatietoja));
+    // Haetaan kyselyn tuottama rivi, joka sisältää lisätyn rivin id-sarakkeen arvon
+  }  
+  
+  
 public static function hae($ryhmannimi){
      $query = DB::connection()->prepare('SELECT * FROM Ryhma WHERE ryhmannimi = :ryhmannimi LIMIT 1');
     $query->execute(array('ryhmannimi' => $ryhmannimi));
@@ -48,15 +63,25 @@ public static function hae($ryhmannimi){
     }
 }
   
-public static function edit($ryhmannimi){
-    $ryhmannimi = Ryhma::find($ryhmannimi);
-    View::make('game/edit.html', array('attributes' => $game));
-}    
-
-
+public function update(){
+     
+    $query = DB::connection()->prepare('UPDATE Ryhma SET tietoa =:tietoa WHERE ryhmannimi =:ryhmannimi');
+    $query->execute(array('ryhmannimi'=>$this->ryhmannimi,'tietoa' => $this->lisatietoja));
   
-  
-  
-
+    
 }
 
+public function errors(){
+    $errors = array();
+    if($this->ryhmannimi==''||$this->ryhmannimi==null){
+        $errors[] = 'Ryhmännimi ei saa olla tyhjä';
+    }
+    if(strlen($this->ryhmannimi)<5){
+        $errors[] = 'Ryhmannimen pituuden tulee olla ainakin 5 merkkiä pitkä';
+    }
+    return $errors;
+}
+  
+
+
+}

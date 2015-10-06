@@ -23,9 +23,13 @@
             <td>{{ryhma.ryhmannimi}}        </td>
             <td>{{ryhma.lisatietoja}}        </td>
         
-       <td><button class="btn btn-primary">Jäsenlista</button></td>
-       <td><button class="btn btn-primary">Muokkaa tietoja</button></td>
-      <td><button class="btn btn-danger">Poista ryhmä</button></td>
+            <td><button class="btn btn-primary">Jäsenlista</button></td>
+            <td><a href="{{base_path}}/ryhmat/{{ryhma.ryhmannimi}}/muokkaa">Muokkaa tietoja</a></td>
+            <td>
+                <form method="post" action="{{base_path}}/ryhmat/{{ryhma.ryhmannimi}}/poista">
+                    <button type="submit" class="btn btn-danger">Poista ryhmä</button>
+                </form>
+            </td>
         </tr>
       
       {% endfor %}
@@ -39,7 +43,7 @@
   
 
 <a href="{{base_path}}/lisaa" class="btn btn-success">Lisää uusi ryhmä</a><br>
-<a href="{{base_path}}/" class="btn btn-success">Palaa aloitus sivulle</a>
+<a href="{{base_path}}/" class="btn btn-success">Palaa aloitussivulle</a>
 
 
 
