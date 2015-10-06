@@ -10,6 +10,12 @@ Työn aihe
 
 Jäsenrekiste järjestölle, jossa on paljon jäseniä ja jäsenet voivat toimia useissa eri rooleissa.
 
+Tärkeimmät ominaisuudet:
+-Ryhmän jäsenten yhteystietojen haku.
+-Yhteystietojen ylläpito
+
+
+
 Toimii: ryhmien listaus,lisäys,poisto ja muokkaus. Lisäyksen yhteydessä tarkistetaan, että ryhmännimessä on ainakin 5 kirjainta.
 
 Toiminnassa nyt myös ryhmän jäsenten listaus! Erityisesti s2015 koulutukseen on lisätty jäseniä.
