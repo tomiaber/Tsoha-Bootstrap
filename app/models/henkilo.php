@@ -57,9 +57,27 @@ class Henkilo extends BaseModel{
     public static function jasenet($ryhmannimi){
             $query = DB::connection()->prepare('SELECT * FROM henkilo, henkiloidenryhmat WHERE henkilo.henkilonumero=henkiloidenryhmat.henkilonumero and ryhmannimi=:ryhmannimi');
             $query->execute(array('ryhmannimi'=>$ryhmannimi));
-            
-            
+    $rows = $query->fetchAll();
+    $henkilot = array();        
+    
+    foreach($rows as $row){
+      // Tämä on PHP:n hassu syntaksi alkion lisäämiseksi taulukkoon :)
+      $henkilot[] = new Henkilo(array(
+            'henkilonumero'=>$row['henkilonumero'],
+            'etunimet' => $row['etunimet'],
+            'sukunimi' => $row['sukunimi'],
+            'puhelinnumero' => $row['puhelinnumero'],
+            'sahkopostiosoite' => $row['sahkopostiosoite'],
+            'postinumero' => $row['postinumero'],
+            'lahiosoite' => $row['lahiosoite'],
+            'muutatietoa' => $row['muutatietoa']
+      ));
     }
+    return $henkilot;
+    }
+    
+   
+    
     
     public function delete(){
 

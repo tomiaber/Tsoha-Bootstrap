@@ -23,7 +23,7 @@
             <td>{{ryhma.ryhmannimi}}        </td>
             <td>{{ryhma.lisatietoja}}        </td>
         
-            <td><button class="btn btn-primary">Jäsenlista</button></td>
+            <td><a href="{{base_path}}/ryhmanhenkilot/{{ryhma.ryhmannimi}}">Ryhmän jäsenet</a></td>
             <td><a href="{{base_path}}/ryhmat/{{ryhma.ryhmannimi}}/muokkaa">Muokkaa tietoja</a></td>
             <td>
                 <form method="post" action="{{base_path}}/ryhmat/{{ryhma.ryhmannimi}}/poista">

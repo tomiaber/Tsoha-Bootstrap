@@ -38,5 +38,10 @@ class HenkilotController extends BaseController{
         Redirect::to('/henkilot');
   }  
     
-    
+  public function jasenet($ryhmannimi){
+      $henkilot = Henkilo::jasenet($ryhmannimi);
+      View::make('henkilot.html',array('henkilot' => $henkilot));     
+  }
+  
+  
 }

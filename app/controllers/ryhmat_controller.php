@@ -56,7 +56,8 @@ class RyhmatController extends BaseController{
     Redirect::to('/ryhmat');
   }
     
-    
+   
+  
 }
 
 /* 

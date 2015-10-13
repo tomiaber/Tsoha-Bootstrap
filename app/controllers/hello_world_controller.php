@@ -51,15 +51,15 @@
     }
     public static function handle_login(){
     $params = $_POST;
-  
-    $kayttaja = Kayttaja::tunnistaudu($params['username'], $params['password']);
+    Kint::dump($params);
+    $kayttaja = Kayttaja::tunnistaudu($params);
 
     if(!$kayttaja){
       View::make('kirjautuminen.html', array('error' => 'Väärä käyttäjätunnus tai salasana!', 'username' => $params['username']));
     }else{
-      $_SESSION['user'] = $user->id;
+     
 
-      Redirect::to('/', array('message' => 'Tervetuloa takaisin ' . $user->name . '!'));
+      Redirect::to('/', array('message' => 'Kirjautuminen onnistui'));
     }
   }
     

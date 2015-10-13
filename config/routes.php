@@ -18,7 +18,7 @@
   });
 
 
-	$routes->get('/henkilo', function() {
+    $routes->get('/henkilo', function() {
     HelloWorldController::henkilo();
   });
 
@@ -67,5 +67,9 @@
   $routes->get('/henkilot', function() {
       HenkilotController::henkilot();
       
+  });
+  
+  $routes->get('/ryhmanhenkilot/:ryhmannimi', function($ryhmannimi) {
+    HenkilotController::jasenet($ryhmannimi);
   });
   
