@@ -5,7 +5,7 @@ Yleisiä linkkejä:
 * [Linkki sovellukseeni](http://tomiaber.users.cs.helsinki.fi/tietokanta/)
 * [Linkki dokumentaatiooni](https://github.com/tomiaber/Tsoha-Bootstrap/blob/master/doc/Tietokannan harjoitustyö.pdf)
 * [kaavio] (https://github.com/tomiaber/Tsoha-Bootstrap/blob/master/doc/Relaatiotietokantakaavio.pdf)
-* [creat table lauseet](https://github.com/tomiaber/Tsoha-Bootstrap/blob/master/doc/Tietokannan harjoitustyö.pdf)
+* [creat table lauseet](https://github.com/tomiaber/Tsoha-Bootstrap/blob/master/doc/creat tables.odt)
 
 Työn aihe
 
