@@ -4,15 +4,28 @@ Yleisiä linkkejä:
 
 * [Linkki sovellukseeni](http://tomiaber.users.cs.helsinki.fi/tietokanta/)
 * [Linkki dokumentaatiooni](https://github.com/tomiaber/Tsoha-Bootstrap/blob/master/doc/dokumentaatio.pdf)
+* [kaavio] (https://github.com/tomiaber/Tsoha-Bootstrap/blob/master/doc/Relaatiotietokantakaavio.pdf)
 
 Työn aihe
 
 Jäsenrekiste järjestölle, jossa on paljon jäseniä ja jäsenet voivat toimia useissa eri rooleissa.
 
-Näkymiä:
-* [henkilo](http://tomiaber.users.cs.helsinki.fi/tietokanta/henkilo)
-* [henkilot](http://tomiaber.users.cs.helsinki.fi/tietokanta/henkilot)
+Tärkeimmät ominaisuudet:
+-Ryhmän jäsenten yhteystietojen haku.
+-Yhteystietojen ylläpito
+
+
+
+Toimii: ryhmien listaus,lisäys,poisto ja muokkaus. Lisäyksen yhteydessä tarkistetaan, että ryhmännimessä on ainakin 5 kirjainta.
+
+Toiminnassa nyt myös ryhmän jäsenten listaus! Erityisesti s2015 koulutukseen on lisätty jäseniä.
+
+RyhmäNäkyä:
 * [ryhmat](http://tomiaber.users.cs.helsinki.fi/tietokanta/ryhmat)
+
+Toimii: henkilöiden listaus, lisäys ja poisto
+Henkilönäkymä:
+* [henkilöt](http://tomiaber.users.cs.helsinki.fi/tietokanta/henkilot)
 
 
 Linkkejä bootstrap dokumentaatioon:
