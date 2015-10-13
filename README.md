@@ -3,7 +3,7 @@
 Yleisiä linkkejä:
 
 * [Linkki sovellukseeni](http://tomiaber.users.cs.helsinki.fi/tietokanta/)
-* [Linkki dokumentaatiooni](https://github.com/tomiaber/Tsoha-Bootstrap/blob/master/doc/dokumentaatio.pdf)
+* [Linkki dokumentaatiooni](https://github.com/tomiaber/Tsoha-Bootstrap/blob/master/doc/Tietokannan harjoitustyö.pdf)
 * [kaavio] (https://github.com/tomiaber/Tsoha-Bootstrap/blob/master/doc/Relaatiotietokantakaavio.pdf)
 
 Työn aihe
